@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+    <div>
+        <img src="https://sso.masaischool.com/brand_dark.svg" alt="logo">
+    </div>
+    <form>
+        <label for="">Email </label><br />
+        <input id="email" type="email" placeholder="Enter email" /><br />
+        <label for="">Password </label><br />
+        <input id="password" type="password" placeholder="Password" /><br />
+        <button class="button" type="submit"> Log In </button>
+        <p for="" style="text-align: center;">Don't have an account? 
+            <a style="text-decoration: none; font-weight: bold;" href="file:///C:/Users/sahoo/Documents/WEB-21/pujarini_sahoo_fw21_0682/unit-2/sprint-4/day-1/assignments/signup-login/signup.html">Sign Up</a>
+        </p>
+    </form>
+</body>
+<script>
+    document.querySelector("form").addEventListener("submit", loginFunction)
+
+    function loginFunction(event){
+        event.preventDefault();
+        let loginArr = JSON.parse(localStorage.getItem("signup-list")) || [];
+        let email = document.querySelector("#email").value;
+        let password = document.querySelector("#password").value;
+        let valid = false;
+
+        loginArr.map(function(el){
+            if(el.email == email && el.password == password){
+                valid = true;
+            }
+        })
+
+        if(valid == true){
+            alert("Log In Successful")
+        }
+        else{
+            alert("Invalid User Name or Password, Please check");
+        }
+
+        
+
+    }
+</script>
+</html>

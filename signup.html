@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="tab">
+        <div class="desktime">
+          <img
+            height="40px"
+            width="40px"
+            src="https://www.freelogovectors.net/wp-content/uploads/2021/12/desktime-logo-freelogovectors.net_.png"
+            alt=""
+          />
+          <div style="margin-top: 5px">DeskTime</div>
+        </div>
+        <div id="items">
+          <a href="">Demo</a>
+          <a href="">Features</a>
+          <a href="">Pricing</a>
+          <a href="">About Us</a>
+          <a href="">FAQ</a>
+          <a href="">Blog</a>
+          <button class="navbtn1">LOGIN</button>
+          <button class="navbtn2">SIGN UP</button>
+        </div>
+      </div>
+    </div>
+    <div id="signup">
+      <div>
+        <h4>Sign up for a FREE DeskTime trial</h4>
+        <p>Start tracking your productivity in less than a minute!</p>
+      </div>
+      <form>
+        <label for="">Full Name</label><br />
+        <input id="name" type="text" placeholder="Enter your full name" /><br />
+        <label for="">Email </label><br />
+        <input id="email" type="email" placeholder="Enter email" /><br />
+        <label for="">Password </label><br />
+        <input id="password" type="password" placeholder="Password" /><br />
+        <button class="button" type="submit">SIGN UP</button>
+        <p for="" style="text-align: center">
+          Already have an account?
+          <a
+            style="text-decoration: none; font-weight: bold"
+            href="C:\Users\sahoo\Documents\WEB-21\pujarini_sahoo_fw21_0682\unit-2\sprint-4\day-1\assignments\signup-login\login.html"
+            >Sign In</a
+          >
+        </p>
+      </form>
+    </div>
+  </body>
+  <script>
+    let form = document.querySelector("form");
+    form.addEventListener("submit", signupFunction);
+
+    function signupFunction(event) {
+      //console.log("inside my function");
+      event.preventDefault();
+      let signupArr = JSON.parse(localStorage.getItem("signup-list")) || [];
+      //console.log(signupArr)
+
+      let duplicate = false;
+      signupArr.map(function (el) {
+        //console.log(el.email, form.querySelector("#email").value);
+        if (el.email == form.querySelector("#email").value) {
+          duplicate = true;
+        }
+      });
+
+      if (duplicate == true) {
+        alert("Email already exist");
+      } else {
+        let obj = {
+          name: form.querySelector("#name").value,
+          email: form.querySelector("#email").value,
+          password: form.querySelector("#password").value,
+        };
+        signupArr.push(obj);
+        localStorage.setItem("signup-list", JSON.stringify(signupArr));
+        location.replace(
+          "file:///C:/Users/sahoo/Documents/WEB-21/pujarini_sahoo_fw21_0682/unit-2/sprint-4/day-1/assignments/signup-login/login.html"
+        );
+      }
+    }
+  </script>
+</html>

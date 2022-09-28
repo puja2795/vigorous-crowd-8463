@@ -1,0 +1,47 @@
+div{
+    margin-top: 30px;
+    padding: 0 45%;
+}
+
+form {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+  }
+  
+  label {
+    font-size: 20px;
+  }
+
+  input[type="text"], input[type="email"],
+  input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+form > .button{
+    margin-bottom: 30px;
+}
+
+button[type="submit"] {
+  background-color: #e8eaed;
+  color: grey;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3973b6;
+}

@@ -1,0 +1,21 @@
+#benifits{
+    width: 85%;
+    height: 520px;
+    margin: 80px auto 40px auto;
+    display: flex;
+}
+
+#benifits>div:nth-child(1){
+    /* margin-right: 25px; */
+    width: 55%;
+    border: 1px solid green;
+    font-family: Source Sans Pro, sans-serif;
+    text-align: left;
+    margin-right: 35px;
+}
+
+#benifits>div:nth-child(2){
+    border: 1px solid green;
+    width: 45%;
+}
+
