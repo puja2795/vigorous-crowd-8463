@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Time Tracker App For Businesses & Freelancers | DeskTime</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="benifits.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  </head>
+  <body>
+
+    <!-- Navbar section -->
+
+    <div id="navbar">
+      <div id="tab">
+        <div class="desktime" onclick="home()">
+          <img
+            height="40px"
+            width="40px"
+            src="https://www.freelogovectors.net/wp-content/uploads/2021/12/desktime-logo-freelogovectors.net_.png"
+            alt=""
+          />
+          <div style="margin-top: 5px">DeskTime</div>
+        </div>
+        <div id="items">
+          <a href="">Demo</a>
+          <a href="">Features</a>
+          <a href="">Pricing</a>
+          <a href="">About Us</a>
+          <a href="">FAQ</a>
+          <a href="">Blog</a>
+          <button class="navbtn1" onclick="login()">LOGIN</button>
+          <button class="navbtn2" onclick="signup()">SIGN UP</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Section -->
+
+    <div id="header">
+      <div id="content">
+        <div>
+          <h1>The ultimate all-in-one automatic time tracker</h1>
+          <p>A time tracker and workforce management system that will help you develop a high-performing team that smashes goals every time.</p>
+          <div id="form-container">
+            <form >
+              <input type="email" id="t_email"  name="email" placeholder="Your work email">
+              <button type="submit">START FREE TRIAL</button>
+            </form>
+          </div>
+          <p class="bottom">Try free for 14 days. No credit card required.</p>
+          <p class="bottom">By signing up, you agree to our <a class="atnc" href="https://desktime.com/terms" target="_blank">terms </a> and <a class="atnc" href="https://desktime.com/privacy" target="_blank" >privacy policy</a>.</p>
+        </div>
+        <div>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/sgmDvqlSMF4?playlist=sgmDvqlSMF4&autoplay=0&mute=1&loop=1&enablejsapi=1&origin=https%3A%2F%2Fdesktime.com"
+          >
+          </iframe>
+        </div>
+      </div>
+      <div id="logos">
+        <img
+          src="https://desktime.com/static/web/clients/customer-sixt-logo-white.svg"
+          alt=""
+        /><img
+          src="https://desktime.com/static/web/clients/customer-mapon-logo-white.svg"
+          alt=""
+        /><img
+          src="https://desktime.com/static/web/clients/customer-montway-logo-white.svg"
+          alt=""
+        /><img
+          src="https://desktime.com/static/web/clients/customer-onthemap-logo-white.svg"
+          alt=""
+        /><img
+          src="https://desktime.com/static/web/clients/customer-printful-logo-white.svg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+  <script>
+    function login(){
+      location.replace("file:///C:/Users/sahoo/Documents/WEB-21/Project/vigorous-crowd-8463/signin.html")
+    }
+
+    function signup(){
+      location.replace("file:///C:/Users/sahoo/Documents/WEB-21/Project/vigorous-crowd-8463/signup.html")
+    }
+
+    function home(){
+      location.replace("file:///C:/Users/sahoo/Documents/WEB-21/Project/vigorous-crowd-8463/index.html")
+    }
+  </script>
+</html>

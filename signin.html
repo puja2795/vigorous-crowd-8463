@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="signin.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="tab">
+        <div class="desktime" onclick="home()">
+          <img
+            height="40px"
+            width="40px"
+            src="https://www.freelogovectors.net/wp-content/uploads/2021/12/desktime-logo-freelogovectors.net_.png"
+            alt=""
+          />
+          <div style="margin-top: 5px">DeskTime</div>
+        </div>
+        <div id="items">
+          <a href="">Demo</a>
+          <a href="">Features</a>
+          <a href="">Pricing</a>
+          <a href="">About Us</a>
+          <a href="">FAQ</a>
+          <a href="">Blog</a>
+          <button class="navbtn1" onclick="login()">LOGIN</button>
+          <button class="navbtn2" onclick="signup()">SIGN UP</button>
+        </div>
+      </div>
+    </div>
+    <div id="signin">
+        <div>
+          <h1>Log in to DeskTime</h1>
+        </div>
+        <form>
+          <label class="label-input" for="">Email </label><br />
+          <input id="email" type="email" placeholder="Type in your Email" /><br />
+          <label class="label-input" for="">Password </label><br />
+          <input id="password" type="password" placeholder="Create a password" /><br />
+          <button class="button" type="submit">SIGN UP FOR FREE</button>
+        </form>
+        <p><b> <u>I forgot my password</u> </b></p>
+        <p>Don't have an account yet? <a href="C:\Users\sahoo\Documents\WEB-21\Project\vigorous-crowd-8463\signup.html" class="atnc">Sign up here</a> </p>
+        <div id="social-outer">
+          <p><b>Or connect with</b></p>
+          <div id="social">
+              <button><i class="fa-brands fa-square-facebook fa-2x" style="color: white;"></i></button>
+              <button><i class="fa-brands fa-twitter fa-2x" style="color: white;"></i></button>
+              <button><i class="fa-brands fa-linkedin fa-2x" style="color: white;"></i></button>
+              <button><i class="fa-brands fa-google fa-2x" style="color: red;"></i></button>
+              <button><i class="fa-brands fa-apple fa-2x" style="color: white;" ></i></button>
+          </div>
+        </div>
+      </div>
+  </body>
+  <script src="signin.js" type="text/javascript"></script>
+</html>
