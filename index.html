@@ -16,7 +16,7 @@
 
     <div id="navbar">
       <div id="tab">
-        <div class="desktime">
+        <div class="desktime" onclick="home()">
           <img
             height="40px"
             width="40px"
@@ -32,8 +32,8 @@
           <a href="">About Us</a>
           <a href="">FAQ</a>
           <a href="">Blog</a>
-          <button class="navbtn1">LOGIN</button>
-          <button class="navbtn2">SIGN UP</button>
+          <button class="navbtn1" onclick="login()">LOGIN</button>
+          <button class="navbtn2" onclick="signup()">SIGN UP</button>
         </div>
       </div>
     </div>
@@ -82,7 +82,18 @@
         />
       </div>
     </div>
-
-    
   </body>
+  <script>
+    function login(){
+      location.replace("file:///C:/Users/sahoo/Documents/WEB-21/Project/vigorous-crowd-8463/signin.html")
+    }
+
+    function signup(){
+      location.replace("file:///C:/Users/sahoo/Documents/WEB-21/Project/vigorous-crowd-8463/signup.html")
+    }
+
+    function home(){
+      location.replace("file:///C:/Users/sahoo/Documents/WEB-21/Project/vigorous-crowd-8463/index.html")
+    }
+  </script>
 </html>

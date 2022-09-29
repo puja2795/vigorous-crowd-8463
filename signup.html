@@ -7,11 +7,14 @@
     <title>Sign-up</title>
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    
   </head>
   <body>
+    
     <div id="navbar">
       <div id="tab">
-        <div class="desktime">
+        <div class="desktime" onclick="home()">
           <img
             height="40px"
             width="40px"
@@ -27,8 +30,8 @@
           <a href="">About Us</a>
           <a href="">FAQ</a>
           <a href="">Blog</a>
-          <button class="navbtn1">LOGIN</button>
-          <button class="navbtn2">SIGN UP</button>
+          <button class="navbtn1" onclick="login()">LOGIN</button>
+          <button class="navbtn2" onclick="signup()">SIGN UP</button>
         </div>
       </div>
     </div>
@@ -37,57 +40,29 @@
         <h4>Sign up for a FREE DeskTime trial</h4>
         <p>Start tracking your productivity in less than a minute!</p>
       </div>
-      <form>
-        <label for="">Full Name</label><br />
-        <input id="name" type="text" placeholder="Enter your full name" /><br />
-        <label for="">Email </label><br />
-        <input id="email" type="email" placeholder="Enter email" /><br />
-        <label for="">Password </label><br />
-        <input id="password" type="password" placeholder="Password" /><br />
-        <button class="button" type="submit">SIGN UP</button>
-        <p for="" style="text-align: center">
-          Already have an account?
-          <a
-            style="text-decoration: none; font-weight: bold"
-            href="C:\Users\sahoo\Documents\WEB-21\pujarini_sahoo_fw21_0682\unit-2\sprint-4\day-1\assignments\signup-login\login.html"
-            >Sign In</a
-          >
-        </p>
+      <form id="signup-form">
+        <label class="label-input" for="">First and last Name</label><br />
+        <input id="name" type="text" placeholder="Type in your first and last name" /><br />
+        <label class="label-input" for="">Email </label><br />
+        <input id="email" type="email" placeholder="Type in your Email" /><br />
+        <label class="label-input" for="">Password </label><br />
+        <input id="password" type="password" placeholder="Create a password" /><br />
+        <button class="button" type="submit">SIGN UP FOR FREE</button>
+        <p class="bottom">Try free for 14 days. No credit card required.</p>
+        <p class="bottom">By signing up, you agree to our <a class="atnc" href="https://desktime.com/terms" target="_blank">terms</a> and <a class="atnc" href="https://desktime.com/privacy" target="_blank" >privacy policy</a>.</p>
       </form>
+      <div>
+        <p><b>Or connect with</b></p>
+        <div id="social">
+            <button><i class="fa-brands fa-square-facebook fa-2x" style="color: white;"></i></button>
+            <button><i class="fa-brands fa-twitter fa-2x" style="color: white;"></i></button>
+            <button><i class="fa-brands fa-linkedin fa-2x" style="color: white;"></i></button>
+            <button><i class="fa-brands fa-google fa-2x" style="color: red;"></i></button>
+            <button><i class="fa-brands fa-apple fa-2x" style="color: white;" ></i></button>
+        </div>
+      </div>
+      <p>Are you already registered? <a href="C:\Users\sahoo\Documents\WEB-21\Project\vigorous-crowd-8463\signin.html" class="atnc">Log in here</a> </p>
     </div>
+    <script src="signup.js" type="text/javascript"></script>
   </body>
-  <script>
-    let form = document.querySelector("form");
-    form.addEventListener("submit", signupFunction);
-
-    function signupFunction(event) {
-      //console.log("inside my function");
-      event.preventDefault();
-      let signupArr = JSON.parse(localStorage.getItem("signup-list")) || [];
-      //console.log(signupArr)
-
-      let duplicate = false;
-      signupArr.map(function (el) {
-        //console.log(el.email, form.querySelector("#email").value);
-        if (el.email == form.querySelector("#email").value) {
-          duplicate = true;
-        }
-      });
-
-      if (duplicate == true) {
-        alert("Email already exist");
-      } else {
-        let obj = {
-          name: form.querySelector("#name").value,
-          email: form.querySelector("#email").value,
-          password: form.querySelector("#password").value,
-        };
-        signupArr.push(obj);
-        localStorage.setItem("signup-list", JSON.stringify(signupArr));
-        location.replace(
-          "file:///C:/Users/sahoo/Documents/WEB-21/pujarini_sahoo_fw21_0682/unit-2/sprint-4/day-1/assignments/signup-login/login.html"
-        );
-      }
-    }
-  </script>
 </html>

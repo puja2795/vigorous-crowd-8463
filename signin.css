@@ -1,22 +1,33 @@
-div{
-    margin-top: 30px;
-    padding: 0 45%;
+#signin{
+  margin: 150px auto 0 auto;
+  font-family: Source Sans Pro,sans-serif;
+  width: 80%;
 }
 
-form {
+#signin>div>h1{
+  margin-bottom: 10px;
+  text-align: center;
+  font-size:35px;
+  font-weight: 900;
+}
+p{
+  text-align: center;
+  color: #333c43;
+}
+
+#signin>form {
     margin: 0 auto;
-    margin-top: 30px;
     width: 30%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 30px;
   }
   
-  label {
-    font-size: 20px;
-  }
+.label-input{
+  color: #70777b;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
 
-  input[type="text"], input[type="email"],
-  input[type="password"] {
+input[type="text"], input[type="email"],input[type="password"] {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -25,9 +36,11 @@ form {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-size: 15px;
+  font-weight: 400;
 }
 
-form > .button{
+#signin>form > .button{
     margin-bottom: 30px;
 }
 
@@ -35,13 +48,66 @@ button[type="submit"] {
   background-color: #e8eaed;
   color: grey;
   padding: 12px 20px;
-  border: none;
   border-radius: 10px;
   cursor: pointer;
   width: 100%;
-  font-size: 20px;
+  font-size: 12px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: #4ea819;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-weight: bold;
 }
 
-button[type="submit"]:hover {
+#signin>button[type="submit"]:hover {
   background-color: #3973b6;
+}
+.atnc{
+  margin: 0 0;
+  color: #475056;
+  font-weight: bold;
+}
+
+#social-outer{
+  width: 35%;
+  margin: auto;
+  border: 1px solid rgb(224, 215, 215);
+  padding: 20px;
+}
+
+#social{
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+#social>button{
+  height: 40px;
+  width: 60px;
+  border: none;
+  border-radius: 3px;
+  margin: auto;
+}
+
+#social>button:nth-child(1){
+  background-color: #1877f2;
+}
+
+#social>button:nth-child(2){
+  background-color: #1da1f2;
+}
+
+#social>button:nth-child(3){
+  background-color: #0a66c2;
+}
+
+#social>button:nth-child(4){
+  background-color: #f5f5f6;
+  border: 1px solid grey;
+}
+
+#social>button:nth-child(5){
+  background-color: black;
 }
