@@ -1,0 +1,52 @@
+#faq{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 70px 0px;
+}
+
+#things-container{
+    width: 70%;
+    margin: auto;
+    
+}
+
+#things-container>h1{
+    text-align: center;
+    width: 75%;
+    margin:auto;
+    padding-bottom: 40px;
+    color: #333C43;
+    font-size: 38px;
+}
+
+#things-container>div{
+    border: 1px solid #d6d8d9;
+    border-radius: 7px;
+    padding: 5px 15px;
+    color: #475056;
+    margin-bottom: 17px;
+}
+
+#things-container>div>h3{
+    margin-top: 15px;
+}
+
+#things-container>div>div{
+    display: flex;
+}
+
+#things-container>div>div>button{
+    margin-top: 15px;
+    margin-left: auto;
+    background-color: white;
+    border: none;
+}
+
+#things-container>div>p{
+    line-height: 30px;
+    font-size: 20px;
+    display: none;
+}
+
+#up-arr{
+    display: none;
+}

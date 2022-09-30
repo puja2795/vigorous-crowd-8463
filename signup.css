@@ -21,12 +21,12 @@ p{
     padding: 30px;
   }
   
-  .label-input{
-    color: #70777b;
-    font-size: 12px;
-    font-weight: 600;
-    text-align: center;
-  }
+.label-input{
+  color: #70777b;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
 
 input[type="text"], input[type="email"],input[type="password"] {
   width: 100%;

@@ -61,9 +61,9 @@ h1+p{
     line-height: 1.75rem;
 }
 
-input[type="email"]{
-  width: 50%;
-  height: 50px;
+#t_email{
+  width: 55%;
+  height: 45px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 15px;
@@ -77,15 +77,16 @@ input[type="email"]{
 }
 
 #form-container>form>button{
-    height: 50px;
+    height: 45px;
     margin-right: 10px;
-    width: 50%;
+    width: 40%;
     background-color: #4ea819;
     border-radius: 4px;
     border: none;
     color: white;
     margin-top: 6px;
     font-size: 18px;
+    font-weight: bold;
 }
 .bottom{
     font-family: Source Sans Pro,sans-serif;

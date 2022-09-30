@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="benefits.css" />
+    <link rel="stylesheet" href="form-section.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="things-to-know.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -177,13 +180,192 @@
       </div>
     </div>
 
+    <!-- Things to know Section -->
+    <div id="faq">
+      <div id="things-container">
+        <h1>Things worth knowing about using a time tracker</h1>
+        <div id="q1">
+          <div>
+            <h3>How does using a time tracker improve productivity?</h3>
+            <button onclick="faqClose('q1')">
+              <i id="up-arr" class="fa-solid fa-angle-up fa-2x" ></i>
+              <i id="down-arr" class="fa-solid fa-angle-down fa-2x" ></i>
+            </button>
+          </div>
+          <p id="para">This self-analysis will motivate both you and your employees to do better and avoid any unnecessary and unproductive actions like those well-known "fast and easy" 5-minute jobs many of us are often asked to do. Employees who track time can note how much these extra jobs actually take up their day and be able to make better decisions on whether it's worth interrupting their workflow.</p>
+        </div>
+        <div id="q2">
+          <div>
+            <h3>Can implementing DeskTime prevent burnout?</h3>
+            <button onclick="faqClose('q2')">
+              <i id="up-arr" class="fa-solid fa-angle-up fa-2x" ></i>
+              <i id="down-arr" class="fa-solid fa-angle-down fa-2x" ></i>
+            </button>
+          </div>
+          <p id="para">Yes! Using a time tracker can help highlight overachievers and spot team members who are struggling or might need some extra help. This is a great way to catch and prevent burnout, as well as rethink resource distribution.</p>
+        </div>
+        <div id="q3">
+          <div>
+            <h3>Is my team's privacy safe when using a time tracker?</h3>
+            <button onclick="faqClose('q3')">
+              <i id="up-arr" class="fa-solid fa-angle-up fa-2x" ></i>
+              <i id="down-arr" class="fa-solid fa-angle-down fa-2x" ></i>
+            </button>
+          </div>
+          <p id="para">First thing’s first – DeskTime is not an employee monitoring or spy tool, but it’s no secret that some might use this kind of software in ways that aren’t employee-friendly. Managers have the right to know how their employees get the job done, but it's imperative to also value your team's time and privacy. That's why DeskTime even has a Private time feature that disables the time tracker for when you have to take care of non-work-related tasks during office hours.</p>
+        </div>
+        <div id="q4">
+          <div>
+            <h3>How to communicate using a time tracker with your team?</h3>
+            <button onclick="faqClose('q4')">
+              <i id="up-arr" class="fa-solid fa-angle-up fa-2x" ></i>
+              <i id="down-arr" class="fa-solid fa-angle-down fa-2x" ></i>
+            </button>
+          </div>
+          <p id="para">You have to remember that time tracking is a two-way street of communication and lead by example. Yes, it gives managers an overview of what their employees are doing during the workday, but it’s also a tool to help employees show their progress and ask for help if needed. Be transparent and honest about implementing a time tracker and take the time to show its benefits. For example, DeskTime lets you set break reminders, encourage private time, and eliminate overworking so your team members feel rested, valued, and safe.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div id="form-section">
+      <div id="form-div">
+        <h1>Want to get the most out of your time?
+          Try DeskTime for free!</h1>
+        <form>
+          <input
+            type="email" id="form_email" name="email" placeholder="Your work email"
+          />
+          <button type="submit">START FREE TRIAL</button>
+        </form>
+      </div>
+      <p class="form-terms">Try free for 14 days. No credit card required.</p>
+      <p class="form-terms">
+        By signing up, you agree to our
+        <a class="anchor-tag" href="https://desktime.com/terms" target="_blank"
+          ><u>terms</u></a>
+        and
+        <a class="anchor-tag" href="https://desktime.com/privacy" target="_blank"
+          ><u>privacy policy</u></a
+        >.
+      </p>
+    </div>
+
+
     <!-- Footer Section -->
 
-    <div id="footer">
-      <div></div>
+    <div id="footer1">
+      <div>
+        <p><b>Company</b></p>
+        <p>Home</p>
+        <p>Terms</p>
+        <p>Privacy</p>
+        <p>Cookies</p>
+        <p>Affiliate terms</p>
+        <p>Download app</p>
+        <p>Pricing</p>
+        <p>Affiliate</p>
+        <p>Press</p>
+        <p>DeskTime in your language</p>
+      </div>
+      <div>
+        <p><b>Learn more</b></p>
+        <p>All resources</p>
+        <p>Employee monitoring guide</p>
+        <p>Online employee time clock</p>
+        <p>Best time tracking apps</p>
+        <p>DeskTime for business</p>
+        <p>DeskTime for freelancers</p>
+        <p>FAQ</p>
+        <p>Case studies</p>
+        <p>Webinars</p>
+        <p>Blog</p>
+      </div>
+      <div>
+        <p><b>Integrations</b></p>
+        <p>All integrations</p>
+        <p>Trello</p>
+        <p>Basecamp</p>
+        <p>Jira</p>
+        <p>Asana</p>
+        <p>Outlook Calendar</p>
+        <p>Google Calendar</p>
+      </div>
+      <div>
+        <p><b>Features</b></p>
+        <p>All features</p>
+        <p>Automatic time tracking</p>
+        <p>URL & App tracking</p>
+        <p>Screenshots</p>
+        <p>Project time tracking</p>
+        <p>Shift schedule</p>
+        <p>Offline time tracking</p>
+        <p>Invoicing</p>
+        <p>Absence calendar</p>
+        <p>Mobile app</p>
+        <p>Feature request</p>
+      </div>
+      <div>
+        <p><b>Help center</b></p>
+        <p>Contact us</p>
+        <p>Schedule a call</p>
+        <p>Send us an e-mail</p>
+        <p>Request In-person training</p>
+        <p>Open chat</p>
+        <p> <b>Phone support</b> </p>
+        <p>USA: +1 (315) 6365354</p>
+        <p>EU: +371 27337268</p>
+      </div>
     </div>
+    <div id="footer2">
+      <div id="footer-child">
+        <div id="container-1">
+          <div class="desktime-footer" onclick="home()">
+            <img
+              height="40px"
+              width="40px"
+              src="https://www.freelogovectors.net/wp-content/uploads/2021/12/desktime-logo-freelogovectors.net_.png"
+              alt=""
+            />
+            <div style="margin-top: 5px">DeskTime</div>
+          </div>
+          <div class="app-icons">
+            <img 
+                class="android" 
+                alt='Get it on Google Play' 
+                src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' />
+            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000&h=7e7b68fad19738b5649a1bfb78ff46e9" 
+                alt="Download on the App Store">
+          </div>
+        </div>
+        <div id="container-2">
+          <div>
+            <i class="fa-brands fa-square-facebook fa-2x"></i>
+            <i class="fa-brands fa-twitter fa-2x"></i>
+            <i class="fa-brands fa-youtube fa-2x"></i>
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+            <i class="fa-brands fa-skype fa-2x"></i>
+            <i class="fa-brands fa-whatsapp fa-2x"></i>
+          </div>
+          <div>
+            <h4>Subscribe to our newsletter</h4>
+            <form>
+              <input
+                type="email" id="footer_email" name="email" placeholder="Type in your email"
+              />
+              <button id="footer-button" type="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
-  <script>
+ 
+ 
+ 
+ <script>
+    let show = true;
     function login() {
       location.replace(
         "file:///C:/Users/sahoo/Documents/WEB-21/Project/vigorous-crowd-8463/signin.html"
@@ -200,6 +382,21 @@
       location.replace(
         "file:///C:/Users/sahoo/Documents/WEB-21/Project/vigorous-crowd-8463/index.html"
       );
+    }
+
+    function faqClose(divId) {
+      let el = document.getElementById(divId);
+      if(show){
+        el.getElementsByTagName("p")[0].style.display="none";
+        el.getElementsByTagName("i")['down-arr'].style.display="none";
+        el.getElementsByTagName("i")['up-arr'].style.display="block";
+      }
+      else{
+        el.getElementsByTagName("p")[0].style.display="block";
+        el.getElementsByTagName("i")['down-arr'].style.display="block";
+        el.getElementsByTagName("i")['up-arr'].style.display="none";
+      }
+      show = !show;
     }
   </script>
 </html>

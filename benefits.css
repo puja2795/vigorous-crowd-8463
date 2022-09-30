@@ -81,6 +81,7 @@
     color: white;
     text-align: center;
     padding: 100px 10px 0 10px;
+    border-radius: 3px;
 }
 
 .review-box > p:nth-child(1) {
