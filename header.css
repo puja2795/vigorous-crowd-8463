@@ -25,7 +25,6 @@
     display: flex;
 }
 
-
 #content>div:nth-child(1){
     margin-right: 25px;
     width: 50%;

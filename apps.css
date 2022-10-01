@@ -1,0 +1,60 @@
+#app-section{
+    font-family: Source Sans Pro,sans-serif;
+    width:80%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+#app-section>h1{
+    padding: 60px 0 20px 0;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    line-height: 40px;
+    color: #333C43;
+}
+
+#app-section>p{
+    text-align: center;
+    width:70%;
+    margin: auto;
+    color: #475056;
+    padding-bottom: 20px;
+}
+
+#apps-container{
+    display: flex;
+}
+
+#apps-container>div{
+    width: 30%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.icons>i{
+    margin-right: 20px;
+    color: #70777B
+}
+
+#apps-container>div>button{
+    width: 120px;
+    border: 1px solid #9fa3a6;
+    height: 40px;
+    border-radius: 3px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.app-benifits{
+    text-align: left;
+}
+
+.app-benifits>p>i{
+    color: #51a81a;
+}
+
+.sub-para{
+    font-size: large;
+}
