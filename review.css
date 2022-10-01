@@ -1,0 +1,103 @@
+#reviews {
+    background-color: #f5f5f6;
+    
+}
+
+.reviews-row {
+    display: flex;
+    align-items: center;
+}
+
+#reviews>div:nth-child(1) {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding: 35px;
+}
+
+#reviews>div:nth-child(2) {
+    width: 80%;
+    margin: auto;
+    padding: 35px;
+}
+
+#reviews>div>h2 {
+    font-size: 25px;
+    line-height: 35px;
+    color: #333c43;
+}
+
+#reviews>div:nth-child(2) {
+    display: flex;
+}
+
+#reviews>div:nth-child(2)>button {
+    background-color: #70777b;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px;
+    height: 20%;
+}
+
+#reviews>div:nth-child(2)>button>i {
+    color: white;
+}
+
+.rev-div {
+    width: 30%;
+    margin: 0 15px;
+    padding: 15px;
+    color: #333c43;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 250px;
+}
+
+.rev-div-card-description {
+    font-size: 12px;
+    padding: 0px 5px;
+    color: #475056
+}
+
+.rev-div>div {
+    display: flex;
+}
+
+.rev-div>div>img {
+    border-radius: 100%;
+    height: 40px;
+}
+
+.rev-div>div>div {
+    padding-left: 15px;
+}
+
+.rev-div>div>div>h4 {
+    margin: 3px 0px;
+    font-size: 16px;
+}
+
+.rev-div>div>div>p {
+    margin: 0px;
+    font-size: 14px;
+    color: #737a80;
+}
+
+.rev-div>div>div>a {
+    font-size: 14px;
+    color: #737a80;
+}
+
+.light-circle {
+    color: #737a80;
+    padding-right: 15px;
+}
+
+.dark-circle {
+    color: #333c43;
+}
+
+.circle-icon{
+    font-size: 8px;
+    text-align: center;
+    padding-bottom: 50px;
+}

@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="benefits.css" />
+    <link rel="stylesheet" href="presentation.css" />
     <link rel="stylesheet" href="form-section.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="things-to-know.css" />
+    <link rel="stylesheet" href="apps.css" />
+    <link rel="stylesheet" href="tools.css" />
+    <link rel="stylesheet" href="features.css" />
+    <link rel="stylesheet" href="review.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -18,33 +23,37 @@
   </head>
   <body>
     <!-- Navbar section -->
-
     <div id="navbar">
-      <div id="tab">
+      <div class="brand">
+        <div class="burger">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
         <div class="desktime" onclick="home()">
           <img
-            height="40px"
-            width="40px"
+            height="38px"
             src="https://www.freelogovectors.net/wp-content/uploads/2021/12/desktime-logo-freelogovectors.net_.png"
             alt=""
           />
           <div style="margin-top: 5px">DeskTime</div>
         </div>
-        <div id="items">
-          <a href="">Demo</a>
-          <a href="">Features</a>
-          <a href="">Pricing</a>
-          <a href="">About Us</a>
-          <a href="">FAQ</a>
-          <a href="">Blog</a>
-          <button class="navbtn1" onclick="login()">LOGIN</button>
-          <button class="navbtn2" onclick="signup()">SIGN UP</button>
+        <div class="logout">
+          <i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i>
         </div>
+      </div>
+      
+      <div id="items">
+        <a href="">Demo</a>
+        <a href="">Features</a>
+        <a href="">Pricing</a>
+        <a href="">About Us</a>
+        <a href="">FAQ</a>
+        <a href="">Blog</a>
+        <button class="navbtn1" onclick="login()">LOGIN</button>
+        <button class="navbtn2" onclick="signup()">SIGN UP</button>
       </div>
     </div>
 
     <!-- Header Section -->
-
     <div id="header">
       <div id="content">
         <div>
@@ -80,7 +89,7 @@
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/sgmDvqlSMF4?playlist=sgmDvqlSMF4&autoplay=0&mute=1&loop=1&enablejsapi=1&origin=https%3A%2F%2Fdesktime.com"
+            src="https://www.youtube.com/embed/sgmDvqlSMF4?playlist=sgmDvqlSMF4&autoplay=1&mute=1&loop=1&enablejsapi=1&origin=https%3A%2F%2Fdesktime.com"
           >
           </iframe>
         </div>
@@ -180,6 +189,214 @@
       </div>
     </div>
 
+    <!-- Presentation Section -->
+    <div id="presentation">
+      <div>
+        <div class="presentation-title">
+          <h2>A universal platform for running anything from businesses to large enterprises</h2>
+          <p>From a powerful time tracker to project management, human resource planning, and running an office. Everything is fully customizable and can be turned on and off for the whole company or specific users.</p>
+        </div>
+        <div class="presentation-description">
+          <div class="presentation-pointers">
+            <div class="presentation-subfield">
+              <i class="fa-solid fa-star benefits-icons"></i>
+              <div class="subdescption-text">
+                <span class="presentation-subtitle">No more manual time trackers</span>
+                <p class="presentation-pointer-description">Fully automatic start and end times, no manual entry, and no human error – <b><u>the automatic time tracker</u></b> starts up as soon as you open the computer and stops when you close it.</p>
+              </div>
+            </div>
+  
+            <div class="presentation-subfield">
+              <i class="fa-solid fa-star benefits-icons"></i>
+              <div class="subdescption-text">
+                <span class="presentation-subtitle">Oversee work progress</span>
+                <p class="presentation-pointer-description">With <b><u>URL and document title tracking</u></b> it's easy to always be informed about your team's overall progress and habits during work hours.</p>
+              </div>
+            </div>
+  
+            <div class="presentation-subfield">
+              <i class="fa-solid fa-calendar benefits-icons"></i>
+              <div class="subdescption-text">
+                <span class="presentation-subtitle">Optimize your resources</span>
+                <p class="presentation-pointer-description">Estimate project costs, assign hourly rates, issue invoices, and control expenses. <b><u>Project management</u></b> is easy when you have a birdseye view of all ongoing processes.</p>
+              </div>
+            </div>
+  
+            <div class="presentation-subfield">
+              <i class="fa-solid fa-calendar benefits-icons"></i>
+              <div class="subdescption-text">
+                <span class="presentation-subtitle">Run your office smoothly</span>
+                <p class="presentation-pointer-description">DeskTime isn't just a time tracker. You can assign <b><u>shifts</u></b> and oversee <b><u>absences</u></b>, stay informed about remote workers and run a hybrid office all on one platform.</p>
+              </div>
+            </div>
+          </div>
+          <div class="presentation-graphs">
+            <img src="	https://desktime.com/static/web/new-homepage/universal-platform/universal-platform.webp" alt="">
+          </div>
+        </div>
+        <div class="feature-btns">
+          <button>Automatic time tracking</button><button>Offline time tracking</button><button>Document title tracking</button><button>Private time option</button><button>Invoicing</button>
+        </div>
+        <div class="feature-btns">
+          <button>Pomodoro timer</button><button>Cost calculation</button><button>Team's contacts</button><button>Custom reports</button><button>Absence calendar</button>
+        </div>
+        <div class="feature-btns">
+          <button>Web time tracker</button><button>Third-party Integrations</button><button>Shift Scheduling</button><button>Mobile app</button><button>URL & App tracking</button>
+        </div>
+        <div class="feature-btns">
+          <button>Screenshots</button><button>Project tracking</button><button>Booking</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Section -->
+    <div id="reviews">
+      <div>
+        <h2>More than 18 000 companies worldwide trust DeskTime with their business</h2>
+      </div>
+      <div class="reviews-row">
+        <button><i class="fa-solid fa-angle-left"></i></button>
+        <div class="rev-div">
+          <div>
+            <img src="https://desktime.com/static/web/testimonial-images/rizah.png" alt="">
+            <div>
+              <h4>Rizah Kabasi</h4>
+              <p>Founder & CEO</p>
+              <a href="">Smartlab</a>
+            </div>
+          </div>
+          <p class="rev-div-card-description">I was thinking about if there is a solution which can gather me all needed data about team productivity, and at the same time provide more flexible working hours to all team members. I found it possible with the DeskTime task and time management system. It is easy to control everything and I don't need to worry about employee working hours anymore.</p>
+          <div></div>
+        </div>
+
+        <div class="rev-div">
+          <div>
+            <img src="https://desktime.com/static/web/testimonial-images/vinay-krishna-gupta.jpeg" alt="">
+            <div>
+              <h4>Vinay Krishna Gupta</h4>
+              <p>Co-Founder & CEO</p>
+              <a href="">Anito Labs</a>
+            </div>
+          </div>
+          <p class="rev-div-card-description">We started using DeskTime for our whole team when we moved from Office to Work From Home. DeskTime helped us to form few work from home policies for our teams to work effectively. In the very first week, we started seeing a rise in overall productivity and accountability. DeskTime provides all the necessary features to manage your team remotely.</p>
+          <div></div>
+        </div>
+
+        <div class="rev-div">
+          <div>
+            <img src="https://desktime.com/static/web/testimonial-images/proprofs.png" alt="">
+            <div>
+              <h4>Sameer Bhatia</h4>
+              <p>Founder & CEO</p>
+              <a href="">ProProfs</a>
+            </div>
+          </div>
+          <p class="rev-div-card-description">DeskTime has been instrumental in helping our team work better remotely. We are now able to offer a more flexible policy where team members can work on their own schedules. We have seen improvements in time management and recommend Desktime to any business looking to track time or offer a more flexible remote work policy.</p>
+          <div></div>
+        </div>
+        <button><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+      <div class="circle-icon">
+        <i class="fa-sharp fa-solid fa-circle light-circle"></i>
+        <i class="fa-sharp fa-solid fa-circle light-circle"></i>
+        <i class="fa-sharp fa-solid fa-circle dark-circle"></i>
+    </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features">
+      <div>
+        <img src="images/seamless-workflow.webp" alt="">
+      </div>
+      <div>
+        <h1>A seamless workflow and healthy work-life balance for every employee</h1>
+        <div class="feat-items">
+          <h3><i class="fa-solid fa-calendar-check fa-lg"></i> Flexible schedule</h3>
+          <p>Time tracking is proof-of-work and DeskTime's time tracker gives you just that - you can plan your schedule independently, while your manager can simply follow your progress no matter where you are and when you choose to work.</p>
+        </div>
+        <div class="feat-items">
+          <h3><i class="fa-solid fa-calendar-check fa-lg"></i> Regular break reminders</h3>
+          <p>Our time tracker uses the Pomodoro timer that will keep a cautious eye on your workload and remind you to take regular breaks so you don't lose focus all the while maintaining healthy habits and mental well-being.</p>
+        </div>
+        <div class="feat-items">
+          <h3><i class="fa-solid fa-calendar-check fa-lg"></i> Private time</h3>
+          <p>DeskTime's Private time feature disables the website and time tracker for when you have to take care of non-work-related tasks during office hours. Employees can feel safe knowing their privacy is protected.</p>
+        </div>
+        <div class="feat-items">
+          <h3><i class="fa-solid fa-calendar-check fa-lg"></i> No more unbilled hours</h3>
+          <p>Employee time is pure gold when it comes to resource planning. DeskTime's time tracker even lets you add time spent offline like in meetings, brainstorms, or on work calls so no billable hours go unnoticed.</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Tools Section -->
+    <div id="tools">
+      <div>
+        <div>
+          <img src="images/integrations.webp" alt="">
+        </div>
+        <div>
+          <h1>Integrations with popular work tools</h1>
+          <p>From calendar apps to help you track offline time, to project management software to make project and task tracking accurate, while effortless. DeskTime can simplify every aspect of your workflow.</p>
+          <button id="tools-btn-rm">READ MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- apps Section -->
+    <div id="app-section">
+      <h1>A single time tracking app for desktops and mobile phones</h1>
+      <p>Whether in the office or on the go – use DeskTime to keep track of your and your team's time.</p>
+      <div id="apps-container">
+        <div>
+          <img src="images/desktop.webp" alt="desktops">
+          <h2>DeskTime for desktops</h2>
+          <div class="icons">
+            <i class="fa-brands fa-linux fa-2x"></i>
+            <i class="fa-brands fa-apple fa-2x"></i>
+            <i class="fa-brands fa-windows fa-2x"></i>
+          </div>
+          <p class="sub-para">Requires download and installation</p>
+          <div class="app-benifits">
+            <p><i class="fa-solid fa-check fa-lg"></i> Fully automated time tracker</p>
+            <p><i class="fa-solid fa-check fa-lg"></i> App, URL & Document title tracking</p>
+            <p><i class="fa-solid fa-check fa-lg"></i> Project and task tracking</p>
+            <p><i class="fa-solid fa-check fa-lg"></i> Screenshots</p>
+            <p><i class="fa-solid fa-check fa-lg"></i> Idle and Private time</p>
+          </div>
+          <button>LEARN MORE</button>
+        </div>
+        <div>
+          <img src="images/mobile.webp" alt="mobile-phones">
+          <h2>DeskTime for mobile phones</h2>
+          <div class="icons">
+            <i class="fa-brands fa-apple fa-2x"></i>
+            <i class="fa-brands fa-android fa-2x"></i>
+          </div>
+          <p>Requires download and installation</p>
+          <div class="app-benifits">
+            <p><i class="fa-solid fa-check fa-lg"></i> Manual time tracker</p>
+            <p><i class="fa-solid fa-check fa-lg"></i> Workday overview</p>
+            <p><i class="fa-solid fa-check fa-lg"></i> Project and task tracking</p>
+          </div>
+          <button>LEARN MORE</button>
+        </div>
+        <div>
+          <img src="images/webtimer.webp" alt="time-tracking">
+          <h2>Manual time tracking</h2>
+          <div></div>
+          <p>Requires download and installation</p>
+          <div class="app-benifits">
+            <p><i class="fa-solid fa-check fa-lg"></i> Manual time tracker</p>
+            <p><i class="fa-solid fa-check fa-lg"></i> Workday overview</p>
+            <p><i class="fa-solid fa-check fa-lg"></i> Project and task tracking</p>
+          </div>
+          <button>LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Things to know Section -->
     <div id="faq">
       <div id="things-container">
@@ -250,7 +467,6 @@
         >.
       </p>
     </div>
-
 
     <!-- Footer Section -->
 

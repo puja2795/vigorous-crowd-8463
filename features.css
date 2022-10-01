@@ -1,0 +1,25 @@
+#features {
+    display: flex;
+    width: 75%;
+    margin:auto;
+    gap:50px;
+    padding: 80px 0px;
+}
+
+.feat-items>h3>i {
+    color: #4ea819;
+}
+
+.feat-items>p {
+    padding-left: 25px;
+    color: #475056;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+#features>div:nth-child(1)>img{
+    position: relative;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    height: 550px;
+}
