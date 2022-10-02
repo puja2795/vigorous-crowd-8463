@@ -15,7 +15,8 @@
     <div id="navbar">
       <div class="brand">
         <div class="burger">
-          <i class="fa-solid fa-bars fa-xl"></i>
+          <i class="fa-solid fa-bars fa-xl" onclick="menu(true)"></i>
+          <i class="fa-solid fa-xmark fa-2x" onclick="menu(false)"></i>
         </div>
         <div class="desktime" onclick="home()">
           <img
@@ -25,8 +26,8 @@
           />
           <div style="margin-top: 5px">DeskTime</div>
         </div>
-        <div class="logout">
-          <i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i>
+        <div class="logout" onclick="login()">
+          <i class="fa-solid fa-right-to-bracket fa-xl"></i>
         </div>
       </div>
       
@@ -37,8 +38,10 @@
         <a href="">About Us</a>
         <a href="">FAQ</a>
         <a href="">Blog</a>
-        <button class="navbtn1" onclick="login()">LOGIN</button>
-        <button class="navbtn2" onclick="signup()">SIGN UP</button>
+        <div class="login-signup">
+          <button class="navbtn1 btn-long" onclick="login()">LOGIN</button>
+          <button class="navbtn2 btn-long" onclick="signup()">SIGN UP</button>
+        </div>
       </div>
     </div>
     <div id="signup">

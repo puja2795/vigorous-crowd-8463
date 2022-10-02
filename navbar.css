@@ -17,11 +17,6 @@ body{
     display: flex;
     align-items: center;
 }
-/* #tab{
-    display: flex;
-    justify-content:space-between;
-    margin: 28px 100px;
-} */
 
 a {
     color: #7a8084;
@@ -67,6 +62,11 @@ a:hover {
     display: none;
 }
 
+.burger>i:nth-child(2) {
+    display: none;
+}
+
+
 .logout {
     display: none;
 }
@@ -74,6 +74,12 @@ a:hover {
 #items {
     margin-left: auto;
     padding-right: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#items>i {
+    margin-top: 10px;
 }
 
 .brand {
@@ -86,31 +92,54 @@ a:hover {
 @media (max-width: 1200px) {
     #navbar {
         justify-content: center;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         height: auto;
     }
     .desktime{
         width: 100%;
         display: flex;
-        align-items: center;
+        height: 80px;
         justify-content: center;
-    }
-    #items{
-        /* display: grid; */
+        align-items: center;
     }
 
     .burger{
         display: block;
-        margin: 10px auto 0px 0px;
+        margin: 10px auto 0px 50px;
     }
+
     .logout {
         display: block;
-        margin: 10px 0px 0px auto;
+        margin: 10px 50px 0px auto;
     }
 
     .brand {
         width:100%;
         padding: 0px 50px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    #items{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #items>a {
+        padding: 20px 0px;
+        border-bottom: 1px solid #EBECEC;
+        width: 100%;
     }
     
+    .login-signup {
+        margin: 20px 0px;
+    }
+
+    .login-signup>button {
+        width: 350px;
+    }
 }
