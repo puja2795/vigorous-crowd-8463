@@ -17,15 +17,15 @@ function loginFunction(event){
 }
 
 function login(){
-    location.replace("file:///C:/Users/sahoo/Documents/WEB-21/Project/vigorous-crowd-8463/signin.html")
+    location.replace("./signin.html")
 }
 
 function signup(){
-    location.replace("file:///C:/Users/sahoo/Documents/WEB-21/Project/vigorous-crowd-8463/signup.html")
+    location.replace("./signup.html")
 }
 
 function home(){
-    location.replace("file:///C:/Users/sahoo/Documents/WEB-21/Project/vigorous-crowd-8463/index.html")
+    location.replace("./index.html")
 }
 
 var mq = window.matchMedia("(max-width: 1200px)");
